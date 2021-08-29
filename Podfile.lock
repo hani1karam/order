@@ -1,0 +1,58 @@
+PODS:
+  - Alamofire (4.9.1)
+  - Cosmos (23.0.0)
+  - DropDown (2.3.13)
+  - IQKeyboardManagerSwift (6.5.6)
+  - Kingfisher (6.3.1)
+  - NVActivityIndicatorView (4.8.0):
+    - NVActivityIndicatorView/Presenter (= 4.8.0)
+  - NVActivityIndicatorView/Presenter (4.8.0)
+  - RxCocoa (5.1.3):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.1.3):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.3)
+  - SwiftMessages (9.0.3):
+    - SwiftMessages/App (= 9.0.3)
+  - SwiftMessages/App (9.0.3)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.8)
+  - Cosmos
+  - DropDown
+  - IQKeyboardManagerSwift
+  - Kingfisher
+  - NVActivityIndicatorView (~> 4.8.0)
+  - RxCocoa (~> 5.1.0)
+  - RxSwift (~> 5.1.0)
+  - SwiftMessages
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Cosmos
+    - DropDown
+    - IQKeyboardManagerSwift
+    - Kingfisher
+    - NVActivityIndicatorView
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SwiftMessages
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  Cosmos: b5c6a9a637e28a061b54c8f8b1d8529d7d4db73f
+  DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
+  IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
+  Kingfisher: 016c8b653a35add51dd34a3aba36b580041acc74
+  NVActivityIndicatorView: d24b7ebcf80af5dcd994adb650e2b6c93379270f
+  RxCocoa: e2ed092d5432e4296aa818021d27de4090ac0354
+  RxRelay: 5a18c2eb2d68326ebaf0112f80d837ae41b92b97
+  RxSwift: 915abbdfb62214aa89ccd0b194d44fb478019b27
+  SwiftMessages: 077f19126c24033fe24042237ecc20261adb46e4
+
+PODFILE CHECKSUM: b20df5f449ecae63b042bf1e1130851a2b89d28b
+
+COCOAPODS: 1.10.1

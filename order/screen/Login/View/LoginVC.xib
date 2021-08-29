@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Bold.ttf">
+            <string>Cairo-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginVC" customModule="order" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="11" translatesAutoresizingMaskIntoConstraints="NO" id="bGq-lw-tJq">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mbv-pc-9G9">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JYQ-5U-1zE">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Our Favourite " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gkG-Ii-Urg">
+                                    <rect key="frame" x="45" y="158" width="236" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="21" id="Igk-q6-Zwv"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="24"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Looks For Your Style" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="djZ-TX-Ya7">
+                                    <rect key="frame" x="45" y="196" width="328" height="21"/>
+                                    <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="24"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rPE-3X-b7v" customClass="CustomeView" customModule="order" customModuleProvider="target">
+                                    <rect key="frame" x="45" y="371" width="328" height="55"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="55" id="ral-qW-Uuf"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="17"/>
+                                    <state key="normal" title="Login">
+                                        <color key="titleColor" red="0.1921590269" green="0.19215402009999999" blue="0.19215497370000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="BorderColor">
+                                            <color key="value" red="0.2000022233" green="0.19999706749999999" blue="0.1999980509" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="roundCorner">
+                                            <real key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="BorderWidth">
+                                            <real key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="loginTapped:" destination="-1" eventType="touchUpInside" id="gZl-dt-2Sg"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IwZ-6v-zPN" customClass="CustomeView" customModule="order" customModuleProvider="target">
+                                    <rect key="frame" x="45" y="456" width="328" height="55"/>
+                                    <color key="backgroundColor" red="0.20392382140000001" green="0.20391857620000001" blue="0.2039195895" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="17"/>
+                                    <state key="normal" title="Sign Up">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="BorderColor">
+                                            <color key="value" red="0.2000022233" green="0.19999706749999999" blue="0.1999980509" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="roundCorner">
+                                            <real key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="BorderWidth">
+                                            <real key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="registerTapped:" destination="-1" eventType="touchUpInside" id="qOf-lk-DLd"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="gkG-Ii-Urg" firstAttribute="top" secondItem="JYQ-5U-1zE" secondAttribute="top" constant="158" id="1C0-OK-pmX"/>
+                                <constraint firstItem="djZ-TX-Ya7" firstAttribute="trailing" secondItem="gkG-Ii-Urg" secondAttribute="trailing" constant="92" id="5CD-HR-MPU"/>
+                                <constraint firstItem="IwZ-6v-zPN" firstAttribute="height" secondItem="rPE-3X-b7v" secondAttribute="height" id="HEG-f9-VP5"/>
+                                <constraint firstItem="rPE-3X-b7v" firstAttribute="top" secondItem="djZ-TX-Ya7" secondAttribute="bottom" constant="154" id="Jbb-Cb-XSV"/>
+                                <constraint firstItem="djZ-TX-Ya7" firstAttribute="height" secondItem="gkG-Ii-Urg" secondAttribute="height" id="VNP-gW-Gvh"/>
+                                <constraint firstItem="IwZ-6v-zPN" firstAttribute="trailing" secondItem="rPE-3X-b7v" secondAttribute="trailing" id="Wos-Z9-ell"/>
+                                <constraint firstItem="IwZ-6v-zPN" firstAttribute="top" secondItem="rPE-3X-b7v" secondAttribute="bottom" constant="30" id="YGt-UF-Ogl"/>
+                                <constraint firstItem="gkG-Ii-Urg" firstAttribute="leading" secondItem="JYQ-5U-1zE" secondAttribute="leading" constant="45" id="ZTT-Mw-5aM"/>
+                                <constraint firstItem="IwZ-6v-zPN" firstAttribute="leading" secondItem="rPE-3X-b7v" secondAttribute="leading" id="beh-nW-RBH"/>
+                                <constraint firstAttribute="trailing" secondItem="rPE-3X-b7v" secondAttribute="trailing" constant="41" id="bwk-qN-Fnq"/>
+                                <constraint firstAttribute="height" constant="896" id="c36-vq-34E"/>
+                                <constraint firstItem="djZ-TX-Ya7" firstAttribute="top" secondItem="gkG-Ii-Urg" secondAttribute="bottom" constant="17" id="rgl-XE-joC"/>
+                                <constraint firstAttribute="trailing" secondItem="gkG-Ii-Urg" secondAttribute="trailing" constant="133" id="skQ-v8-LXf"/>
+                                <constraint firstItem="rPE-3X-b7v" firstAttribute="leading" secondItem="JYQ-5U-1zE" secondAttribute="leading" constant="45" id="vKK-al-DfU"/>
+                                <constraint firstItem="djZ-TX-Ya7" firstAttribute="leading" secondItem="gkG-Ii-Urg" secondAttribute="leading" id="w1G-MK-VDG"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="JYQ-5U-1zE" secondAttribute="trailing" id="D7S-xT-xRd"/>
+                        <constraint firstAttribute="bottom" secondItem="JYQ-5U-1zE" secondAttribute="bottom" id="US5-bJ-pT2"/>
+                        <constraint firstItem="JYQ-5U-1zE" firstAttribute="top" secondItem="Mbv-pc-9G9" secondAttribute="top" id="VaN-qB-tWD"/>
+                        <constraint firstItem="JYQ-5U-1zE" firstAttribute="leading" secondItem="Mbv-pc-9G9" secondAttribute="leading" id="eXy-h6-bXd"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Mbv-pc-9G9" secondAttribute="bottom" id="BZP-5e-Uks"/>
+                <constraint firstItem="Mbv-pc-9G9" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="FtJ-tc-kKq"/>
+                <constraint firstItem="bGq-lw-tJq" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="Mpu-1m-khS"/>
+                <constraint firstItem="bGq-lw-tJq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="XkA-92-Ev5"/>
+                <constraint firstItem="Mbv-pc-9G9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Zw2-4l-gvE"/>
+                <constraint firstItem="JYQ-5U-1zE" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="duA-LO-S14"/>
+                <constraint firstItem="Mbv-pc-9G9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="g3A-ra-gis"/>
+                <constraint firstItem="bGq-lw-tJq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="oqi-Wp-zON"/>
+                <constraint firstAttribute="bottom" secondItem="bGq-lw-tJq" secondAttribute="bottom" id="qbL-He-gCV"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="69.642857142857139"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="IwZ-6v-zPN">
+            <size key="intrinsicContentSize" width="62" height="32"/>
+        </designable>
+        <designable name="rPE-3X-b7v">
+            <size key="intrinsicContentSize" width="43" height="32"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="11" width="454" height="682"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

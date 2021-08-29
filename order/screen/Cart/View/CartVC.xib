@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Bold.ttf">
+            <string>Cairo-Bold</string>
+        </array>
+        <array key="Cairo-Regular.ttf">
+            <string>Cairo-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CartVC" customModule="order" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="NGU-N3-Wzn" id="A6s-BV-Uwc"/>
+                <outlet property="total" destination="oNz-dK-nab" id="XFy-Ph-3yt"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cart" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Hu-ug-JLU">
+                    <rect key="frame" x="153" y="55" width="108" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="Q87-F2-RxK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pyr-b8-rk1">
+                    <rect key="frame" x="27" y="60" width="19" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="19" id="PQN-Yq-yHf"/>
+                        <constraint firstAttribute="height" constant="22" id="pM8-8T-T7u"/>
+                    </constraints>
+                    <state key="normal" image="Path 9"/>
+                    <connections>
+                        <action selector="back:" destination="-1" eventType="touchUpInside" id="aDB-zo-ti6"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o39-s2-ffK">
+                    <rect key="frame" x="0.0" y="95" width="414" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="FJ2-nQ-pfi"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NGU-N3-Wzn">
+                    <rect key="frame" x="0.0" y="104" width="414" height="563"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="563" id="0da-3w-r2x"/>
+                    </constraints>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2yP-dp-xuJ" customClass="CustomeView" customModule="order" customModuleProvider="target">
+                    <rect key="frame" x="37" y="802" width="340" height="60"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iYq-YL-guE">
+                            <rect key="frame" x="40" y="10" width="254" height="42"/>
+                            <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="12"/>
+                            <state key="normal" title="Confirm">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.20784544939999999" green="0.20784008500000001" blue="0.20784118770000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstItem="iYq-YL-guE" firstAttribute="top" secondItem="2yP-dp-xuJ" secondAttribute="top" constant="10" id="APU-mj-9KD"/>
+                        <constraint firstAttribute="trailing" secondItem="iYq-YL-guE" secondAttribute="trailing" constant="46" id="BOh-wj-qXx"/>
+                        <constraint firstAttribute="bottom" secondItem="iYq-YL-guE" secondAttribute="bottom" constant="8" id="K5i-DT-SYc"/>
+                        <constraint firstItem="iYq-YL-guE" firstAttribute="leading" secondItem="2yP-dp-xuJ" secondAttribute="leading" constant="40" id="hnc-nL-4Qg"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="roundCorner">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="300" translatesAutoresizingMaskIntoConstraints="NO" id="XOn-uC-AWW">
+                    <rect key="frame" x="25" y="705" width="364" height="32"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wvF-TZ-1qr">
+                            <rect key="frame" x="0.0" y="0.0" width="35" height="32"/>
+                            <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oNz-dK-nab">
+                            <rect key="frame" x="335" y="0.0" width="29" height="32"/>
+                            <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="XOn-uC-AWW" firstAttribute="top" secondItem="NGU-N3-Wzn" secondAttribute="bottom" constant="38" id="7sM-Dx-aET"/>
+                <constraint firstItem="3Hu-ug-JLU" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="11" id="9Mp-Lw-9D3"/>
+                <constraint firstItem="NGU-N3-Wzn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Hus-iz-X03"/>
+                <constraint firstItem="NGU-N3-Wzn" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="LJQ-F0-xFT"/>
+                <constraint firstItem="NGU-N3-Wzn" firstAttribute="top" secondItem="o39-s2-ffK" secondAttribute="bottom" constant="8" symbolic="YES" id="NeU-QR-y3O"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="3Hu-ug-JLU" secondAttribute="trailing" constant="153" id="Rat-JC-MSP"/>
+                <constraint firstItem="3Hu-ug-JLU" firstAttribute="leading" secondItem="Pyr-b8-rk1" secondAttribute="trailing" constant="107" id="RmR-1T-Lv5"/>
+                <constraint firstItem="o39-s2-ffK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="clk-Al-MiP"/>
+                <constraint firstItem="XOn-uC-AWW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="db3-bh-jok"/>
+                <constraint firstItem="o39-s2-ffK" firstAttribute="top" secondItem="3Hu-ug-JLU" secondAttribute="bottom" constant="8" symbolic="YES" id="gfX-a8-GE5"/>
+                <constraint firstItem="Pyr-b8-rk1" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="mmo-wk-Byz"/>
+                <constraint firstItem="2yP-dp-xuJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="37" id="nMA-QS-DST"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="XOn-uC-AWW" secondAttribute="trailing" constant="25" id="nvg-1I-JYs"/>
+                <constraint firstItem="2yP-dp-xuJ" firstAttribute="top" secondItem="XOn-uC-AWW" secondAttribute="bottom" constant="65" id="qyp-vz-b0U"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="2yP-dp-xuJ" secondAttribute="trailing" constant="37" id="rbZ-lf-wI6"/>
+                <constraint firstItem="2yP-dp-xuJ" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.0669643" id="t6w-me-Z7M"/>
+                <constraint firstAttribute="trailing" secondItem="o39-s2-ffK" secondAttribute="trailing" id="whp-sH-iHo"/>
+                <constraint firstItem="Pyr-b8-rk1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="27" id="xuL-hU-nxj"/>
+                <constraint firstItem="2yP-dp-xuJ" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" constant="-34" id="y53-Ze-z8l"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="70.982142857142847"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Path 9" width="18.5" height="15.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
